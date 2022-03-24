@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build",
+            "command": "gcc",
+            "args": [
+                //"condition_variables/prod_con7.c",
+                "Root Vegetable Farm.c",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-o",
+                "test",
+                "-pthread",
+                //"-lrt"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}
